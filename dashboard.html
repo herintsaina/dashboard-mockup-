@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--  /*************** Menu Project Name ****************/-->
+<div class="side_bar_menu">
+    <div class="logo_side_bar">
+        <img class="picture_logo" src="assets/images/logo_project_name.png" alt="Logo">
+        <div class="text_side">Project Name <div class="child_text">Category</div></div>
+    </div>
+    <div class="side_menu sidebar">
+        <div class="contenue_menu">
+            <div for="dashboard" class="items_menu menu_active">
+                <img src="assets/images/icons8-four-squares.png" class="picture_icons"  alt="Icons Dasboard">
+                <img src="assets/images/icons8-four-squares-50.png" class="picture_blanch" alt="icons blanche">
+                <a href="#">Dashboard</a></div>
+            <div for="project" class="items_menu">
+                <img src="assets/images/icons8-folder.png" class="picture_icons"  alt="Icons Project">
+                <img src="assets/images/icons8-folder-50.png" class="picture_blanch" alt="icons blanche">
+                <a href="#">Project</a></div>
+            <div for="calendar" class="items_menu ">
+                <img src="assets/images/icons8-calendar.png" class="picture_icons"  alt="Icons Calendar">
+                <img src="assets/images/icons8-calendar-31-50.png" class="picture_blanch" alt="icons blanche">
+                <a href="calendar.html">Calendar</a></div>
+            <div for="team" class="items_menu">
+                <img src="assets/images/icons8-user-account.png" class="picture_icons"  alt="Icons Teams">
+                <img src="assets/images/icons8-user-account-32.png" class="picture_blanch" alt="icons blanche">
+                <a href="#">Teams</a></div>
+            <div for="analyse" class="items_menu">
+                <img src="assets/images/icons8-Analystec.png" class="picture_icons"  alt="Icons Analylics">
+                <img src="assets/images/icons8-Analystec-50.png" class="picture_blanch" alt="icons blanche">
+                <a href="#">Analytics</a></div>
+            <div for="code" class="items_menu ">
+                <img src="assets/images/icons8-source-code.png"  class="picture_icons" alt="Icons Integration">
+                <img src="assets/images/icons8-source-code-48.png" class="picture_blanch" alt="icons blanche">
+                <a href="settings.html">Integrations</a></div>
+            <div for="message" class="items_menu">
+                <img src="assets/images/icons8-chat-bubble.png"  class="picture_icons" alt="Icons Message">
+                <img src="assets/images/icons8-chat-bubble-32.png" class="picture_blanch" alt="icons blanche">
+                <a href="#">Messages</a></div>
+        </div>
+    </div>
+    
+    <div class="profil_company"><img src="assets/images/Sergey_Goldberg.png" alt="Sergey_Goldberg"><div class="Nom_profil">Sergey Goldberg <a href="#" class="link_company">company@example.com</a></div></div>
+</div>
+
+<!--/******** CONTENUE DASHBOARD ***************/-->
+
+<div class="container_dashboard">
+    <div class="items_dashboard">
+        <div class="titre_acceuil">
+            <div class="titre_dashbord">Dashboard</div>
+            <div class="boutton_titre">
+                <button class="boutton_creat"><img src="assets/images/icons8-plus-math-32.png" alt="Plus">Create new project</button>
+                <button class="boutton_share"><img src="assets/images/icons8-share-48.png" alt="Share">Share</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section_dashroad">
+        <div class="statistique_content">
+            <div class="data_items">
+                <div class="label_wrap bg_color">
+                    <div class="titre_label">Data label</div>
+                    <div class="contenue_label">6,452</div>
+                    <div class="pourcent_label"><img src="assets/images/Caret_up_extra_4.png" alt="">5.39%</div></div>
+                <div class="label_wrap bg_color1">
+                    <div class="titre_label ">Data label</div>
+                    <div class="contenue_label">2,502</div>
+                    <div class="pourcent_label1"><img src="assets/images/Caret_up_extra_5.png" alt="">0.65%</div></div>
+                <div class="label_wrap bg_color2">
+                    <div class="titre_label ">Data label</div>
+                    <div class="contenue_label">56,201</div>
+                    <div class="pourcent_label"><img src="assets/images/Caret_up_extra_4.png" alt="">2.29%</div></div>
+            </div>
+            <div class="statistique_items">
+                <div class="content">
+                    <div class="title_stat">
+                        <div class="text_stat">Statistics</div>
+                        <select name="month" id="month">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2019">2021</option>
+                            <option value="2018">2020</option>
+                        </select>
+                    </div>
+                    <div class="service_sale">
+                        <img src="assets/images/Column_bar_chart_11.png" alt="Service Sale" class="picture_sale">
+                        <div class="limit_service">
+                            <div class="nombre">1</div>
+                            <div class="nombre">2</div>
+                            <div class="nombre">3</div>
+                            <div class="nombre">4</div>
+                            <div class="nombre">5</div>
+                            <div class="nombre">6</div>
+                            <div class="nombre">7</div>
+                            <div class="nombre">8</div>
+                            <div class="nombre">9</div>
+                            <div class="nombre">10</div>
+                            <div class="nombre">11</div>
+                            <div class="nombre">12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_items">
+                <div class="titre_order">Recent Orders</div>
+                <table id="customers">
+                    <tr>
+                        <th class="text_left">Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th class="text_left">Status</th>
+                    </tr>
+                    <tr>
+                        <td class="text_left">Product name</td>
+                        <td>300</td>
+                        <td>2</td>
+                        <td>$600</td>
+                        <td><div class="text_left tab_new"><div class="text">New</div>
+                            <a href="#"><img src="assets/images/edit-alt.png" class="edit" alt="Edit alt"></a></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text_left">Product name</td>
+                        <td>300</td>
+                        <td>3</td>
+                        <td>$900</td>
+                        <td><div class="text_left tab_delivered"><div class="text1">Delivered</div>
+                            <a href="#"><img src="assets/images/edit-alt.png" class="edit" alt="Edit alt"></a></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text_left">Product name</td>
+                        <td>500</td>
+                        <td>2</td>
+                        <td>$1000</td>
+                        <td><div class="text_left tab_new"><div class="text">New</div>
+                            <a href="#"><img src="assets/images/edit-alt.png" class="edit" alt="Edit alt"></a></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="activiter_content">
+            <div class="activiter_items">
+                <div class="activiter_wrap">
+                    <div class="titre_activiter">
+                        <div class="text">Activities</div>
+                        <div style="position: relative">
+                            <img src="assets/images/icons8-calendar-48.png" class="calendar_act" alt="Month">
+                            <select name="month">
+                                <option value="Monthly">Monthly</option>
+                                <option value="2022">2022</option>
+                                <option value="2019">2021</option>
+                                <option value="2018">2020</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="presentent_profil">
+                        <div class="contenue_presentent">
+                            <img src="assets/images/Kathryn_Murphy.png" alt="Kathryn_Murphy">
+                            <div class="nom_profil">Kathryn Murphy <div class="description">ln eu do do cillum lorem exercitation ea dolor.</div></div>
+                        </div>
+                        <div class="contenue_presentent">
+                            <img src="assets/images/James_Harrid.png" alt="James Harrid">
+                            <div class="nom_profil">James Harrid<div class="description">Deserunt minim indidunt cillum nostrudo voluptate excepteur.</div></div>
+                        </div>
+                        <div class="contenue_presentent">
+                            <img src="assets/images/Elon_Melon.png" alt="Elon Melon">
+                            <div class="nom_profil">Elon Melon<div class="description">Mollit consectetur occaecat et ad adipisicing ex deserunt fugiat.</div></div>
+                        </div>
+                        <div class="contenue_presentent">
+                            <img src="assets/images/Mia_Smith.png" alt="Mia Smith">
+                            <div class="nom_profil">Mia Smith<div class="description">Cupidatat eiusm d tempor labore amet amet proid nt duis.</div></div>
+                        </div>
+                        <div class="contenue_presentent">
+                            <img src="assets/images/James_Doe.png" alt="James Doe">
+                            <div class="nom_profil">James Doe<div class="description">Duis excepteur enim enim dolore aliqua officia nisi labore ipsum.</div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="stat_segment">
+                <div class="titre_stat">Statistics <div class="description">From 1-15 June, 2022</div></div>
+                <img src="assets/images/Pie_chart_3.png" alt="Pia shart">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
