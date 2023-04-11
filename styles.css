@@ -12,7 +12,7 @@ body{
 .oval2{
     position: absolute;
     top: -208px;
-    left: 1046px;
+    right: 1046px;
     width: 551px;
     height: 551px;
     background: #8353E24D; /* secondary-500 */
@@ -275,6 +275,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .logo_side_bar .picture_logo{
@@ -285,6 +286,8 @@ body{
 .logo_side_bar .text_side{
     font-family: 'Epilogue',sans-serif;
     font-size: 18px;
+    color: #000;
+
 }
 
 .logo_side_bar .text_side .child_text{
@@ -1650,505 +1653,607 @@ input:checked + .slider:before {
 
 /******************** Registration **************************/
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {*/
+/*    .container_registration .groupe {*/
+/*        left: 0px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 900px) {*/
+/*    .contenue_registration {*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        width: 400px;*/
+/*        height: 500px;*/
+/*        top: 68px;*/
+/*        left: -8px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 380px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 23px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 950px) {*/
+/*    .contenue_registration {*/
+/*        justify-content: space-around;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        width: 400px;*/
+/*        height: 500px;*/
+/*        top: 68px;*/
+/*        left: 8px;*/
+/*    }*/
+
+/*    !*.account .items_account {*!*/
+/*    !*    width: 380px;*!*/
+/*    !*}*!*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 23px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 800px) {*/
+/*    .contenue_registration {*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        width: 337px;*/
+/*        height: 418px;*/
+/*        top: 155px;*/
+/*        left: -10px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 385px;*/
+/*        height: 490px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 16px;*/
+/*        height: 44px;*/
+/*        margin-top: 15px;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 125px;*/
+/*        height: 40px;*/
+/*    }*/
+/*}*/
+
+
+/*@media (max-width: 750px) {*/
+/*    .container_registration .groupe {*/
+/*        width: 370px;*/
+/*        height: 430px;*/
+/*        position: relative;*/
+/*        top: 143px;*/
+/*        left: -13px;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 120px;*/
+/*        height: 40px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 342px;*/
+/*        height: 480px;*/
+/*        top: 25px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 21px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 78px;*/
+/*        height: 33px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 15px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 42px;*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 17px;*/
+/*        height: 40px;*/
+/*        margin-top: 13px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 22px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 700px) {*/
+/*    .container_registration .groupe {*/
+/*        width: 270px;*/
+/*        height: 320px;*/
+/*        top: 253px;*/
+/*        left: -13px;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 120px;*/
+/*        height: 40px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 342px;*/
+/*        height: 480px;*/
+/*        top: 25px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 21px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 78px;*/
+/*        height: 33px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 15px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 42px;*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 17px;*/
+/*        height: 40px;*/
+/*        margin-top: 13px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 22px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
+
+
+
+
+/*@media (max-width: 650px) {*/
+/*    .oval {*/
+/*        width: 500px;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        width: 270px;*/
+/*        height: 315px;*/
+/*        top: 258px;*/
+/*        left: -15px;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 120px;*/
+/*        height: 40px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 325px;*/
+/*        height: 460px;*/
+/*        top: 25px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 78px;*/
+/*        height: 33px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 15px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 42px;*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 17px;*/
+/*        height: 40px;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 22px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons {*/
+/*        margin-top: 15px;*/
+/*    }*/
+/*}*/
+
+
+/*@media (max-width: 600px) {*/
+/*    .oval {*/
+/*        width: 480px;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        !*width: 240px;*!*/
+/*        !*height: 285px;*!*/
+/*        !*top: 293px;*!*/
+/*        !*left: 20px;*!*/
+/*        display: none;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 104px;*/
+/*        height: 35px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 325px;*/
+/*        height: 425px;*/
+/*        top: 75px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 18px;*/
+/*    }*/
+
+/*    .account .items_account .text_description {*/
+/*        font-size: 11px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 36px;*/
+/*        height: 36px;*/
+/*        border-radius: 18px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 40px;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 15px;*/
+/*        height: 35px;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 20px;*/
+/*    }*/
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons {*/
+/*        margin-top: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account{*/
+/*        height: 27%;*/
+/*    }*/
+
+
+/*}*/
+
+/*@media (max-width: 550px) {*/
+/*    .oval {*/
+/*        width: 480px;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        !*width: 240px;*!*/
+/*        !*height: 285px;*!*/
+/*        !*top: 293px;*!*/
+/*        !*left: 20px;*!*/
+/*        display: none;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 104px;*/
+/*        height: 35px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 325px;*/
+/*        height: 425px;*/
+/*        top: 75px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 18px;*/
+/*    }*/
+
+/*    .account .items_account .text_description {*/
+/*        font-size: 11px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 36px;*/
+/*        height: 36px;*/
+/*        border-radius: 18px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 40px;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 15px;*/
+/*        height: 35px;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 20px;*/
+/*    }*/
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons {*/
+/*        margin-top: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account{*/
+/*        height: 27%;*/
+/*    }*/
+
+/*}*/
+
+/*@media (max-width: 350px) {*/
+/*    .oval {*/
+/*        width: 250px;*/
+/*        height: 250px;*/
+/*        top: -42px;*/
+/*        left: -105px;*/
+/*    }*/
+
+/*    .contenue_registration {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .container_registration .groupe {*/
+/*        width: 150px;*/
+/*        height: 157px;*/
+/*        top: 16px;*/
+/*        left: 154px;*/
+/*        display: block;*/
+/*    }*/
+
+/*    .container_registration .image {*/
+/*        width: 90px;*/
+/*        height: 30px;*/
+/*        top: 20px;*/
+/*        left: 20px;*/
+/*    }*/
+
+/*    .account .items_account {*/
+/*        width: 100%;*/
+/*        height: 425px;*/
+/*        top: 0px;*/
+/*    }*/
+
+/*    .account .items_account .text {*/
+/*        font-size: 18px;*/
+/*    }*/
+
+/*    .account .items_account .text_description {*/
+/*        font-size: 11px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons {*/
+/*        width: 36px;*/
+/*        height: 36px;*/
+/*        border-radius: 18px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons .items_icons img {*/
+/*        height: 19px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account label {*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account input {*/
+/*        height: 40px;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .account .items_account .formulair_account .button_sign {*/
+/*        font-size: 15px;*/
+/*        height: 35px;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    #eyeicon {*/
+/*        height: 20px;*/
+/*    }*/
+/*    .account .items_account .formulair_account .button_description {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account .icons {*/
+/*        margin-top: 12px;*/
+/*    }*/
+
+/*    .account .items_account .titre_account{*/
+/*        height: 27%;*/
+/*    }*/
+
+/*    .contenue_registration .account {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*}*/
+
+
+/*@media (max-width: 300px) {*/
+/*    .container_registration .groupe {*/
+/*        left: 130px;*/
+/*    }*/
+
+/*}*/
+
+/******************** Registration **************************/
+
+@media (max-width: 1920px) {
+    .contenue_registration {
+        height: 100%;
+    }
+
     .container_registration .groupe {
+        width: 35%;
+        height: 100%;
+        top: 0px;
         left: 0px;
     }
-}
 
-@media (max-width: 900px) {
-    .contenue_registration {
-        justify-content: center;
-    }
-
-    .container_registration .groupe {
-        width: 400px;
-        height: 500px;
-        top: 68px;
-        left: -8px;
+    .contenue_registration .account {
+        width: 35%;
     }
 
     .account .items_account {
-        width: 380px;
+        width: 90%;
+        height: 85%;
+        margin: auto;
+        top: 0;
     }
 
     .account .items_account .text {
-        font-size: 23px;
-    }
-}
-
-@media (max-width: 950px) {
-    .contenue_registration {
-        justify-content: space-around;
+        font-size: 35px;
     }
 
-    .container_registration .groupe {
-        width: 400px;
-        height: 500px;
-        top: 68px;
-        left: 8px;
-    }
-
-    /*.account .items_account {*/
-    /*    width: 380px;*/
-    /*}*/
-
-    .account .items_account .text {
-        font-size: 23px;
-    }
-}
-
-@media (max-width: 800px) {
-    .contenue_registration {
-        justify-content: center;
-    }
-
-    .container_registration .groupe {
-        width: 337px;
-        height: 418px;
-        top: 155px;
-        left: -10px;
-    }
-
-    .account .items_account {
-        width: 385px;
-        height: 490px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 16px;
-        height: 44px;
-        margin-top: 15px;
-    }
-
-    .container_registration .image {
-        width: 125px;
-        height: 40px;
-    }
-}
-
-
-@media (max-width: 750px) {
-    .container_registration .groupe {
-        width: 370px;
-        height: 430px;
-        position: relative;
-        top: 143px;
-        left: -13px;
-    }
-
-    .container_registration .image {
-        width: 120px;
-        height: 40px;
-    }
-
-    .account .items_account {
-        width: 342px;
-        height: 480px;
-        top: 25px;
-    }
-
-    .account .items_account .text {
-        font-size: 21px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons {
-        width: 78px;
-        height: 33px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
-    }
-
-    .account .items_account .formulair_account label {
-        font-size: 15px;
-    }
-
-    .account .items_account .formulair_account input {
-        height: 42px;
-        font-size: 14px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 17px;
-        height: 40px;
-        margin-top: 13px;
-    }
-
-    #eyeicon {
-        height: 22px;
-    }
-
-    .account .items_account .formulair_account .button_description {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 700px) {
-    .container_registration .groupe {
-        width: 270px;
-        height: 320px;
-        top: 253px;
-        left: -13px;
-    }
-
-    .container_registration .image {
-        width: 120px;
-        height: 40px;
-    }
-
-    .account .items_account {
-        width: 342px;
-        height: 480px;
-        top: 25px;
-    }
-
-    .account .items_account .text {
-        font-size: 21px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons {
-        width: 78px;
-        height: 33px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
-    }
-
-    .account .items_account .formulair_account label {
-        font-size: 15px;
-    }
-
-    .account .items_account .formulair_account input {
-        height: 42px;
-        font-size: 14px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 17px;
-        height: 40px;
-        margin-top: 13px;
-    }
-
-    #eyeicon {
-        height: 22px;
-    }
-
-    .account .items_account .formulair_account .button_description {
-        font-size: 13px;
-    }
-}
-
-
-
-
-@media (max-width: 650px) {
-    .oval {
-        width: 500px;
-    }
-
-    .container_registration .groupe {
-        width: 270px;
-        height: 315px;
-        top: 258px;
-        left: -15px;
-    }
-
-    .container_registration .image {
-        width: 120px;
-        height: 40px;
-    }
-
-    .account .items_account {
-        width: 325px;
-        height: 460px;
-        top: 25px;
-    }
-
-    .account .items_account .text {
+    .account .items_account .text_description {
         font-size: 20px;
     }
 
     .account .items_account .titre_account .icons .items_icons {
-        width: 78px;
-        height: 33px;
+        width: 121px;
+        height: 50px;
+        border-radius: 50px;
     }
 
     .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
-    }
-
-    .account .items_account .formulair_account label {
-        font-size: 15px;
-    }
-
-    .account .items_account .formulair_account input {
-        height: 42px;
-        font-size: 14px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 17px;
-        height: 40px;
-        margin-top: 10px;
-    }
-
-    #eyeicon {
-        height: 22px;
-    }
-
-    .account .items_account .formulair_account .button_description {
-        font-size: 13px;
-    }
-
-    .account .items_account .titre_account .icons {
-        margin-top: 15px;
-    }
-}
-
-
-@media (max-width: 600px) {
-    .oval {
-        width: 480px;
-    }
-
-    .container_registration .groupe {
-        /*width: 240px;*/
-        /*height: 285px;*/
-        /*top: 293px;*/
-        /*left: 20px;*/
-        display: none;
-    }
-
-    .container_registration .image {
-        width: 104px;
-        height: 35px;
-    }
-
-    .account .items_account {
-        width: 325px;
-        height: 425px;
-        top: 75px;
-    }
-
-    .account .items_account .text {
-        font-size: 18px;
-    }
-
-    .account .items_account .text_description {
-        font-size: 11px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons {
-        width: 36px;
-        height: 36px;
-        border-radius: 18px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
-    }
-
-    .account .items_account .formulair_account label {
-        font-size: 13px;
-    }
-
-    .account .items_account .formulair_account input {
-        height: 40px;
-        font-size: 13px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 15px;
-        height: 35px;
-        margin-top: 10px;
-    }
-
-    #eyeicon {
-        height: 20px;
-    }
-    .account .items_account .formulair_account .button_description {
-        font-size: 12px;
-    }
-
-    .account .items_account .titre_account .icons {
-        margin-top: 12px;
-    }
-
-    .account .items_account .titre_account{
-        height: 27%;
-    }
-
-
-}
-
-@media (max-width: 550px) {
-    .oval {
-        width: 480px;
-    }
-
-    .container_registration .groupe {
-        /*width: 240px;*/
-        /*height: 285px;*/
-        /*top: 293px;*/
-        /*left: 20px;*/
-        display: none;
-    }
-
-    .container_registration .image {
-        width: 104px;
-        height: 35px;
-    }
-
-    .account .items_account {
-        width: 325px;
-        height: 425px;
-        top: 75px;
-    }
-
-    .account .items_account .text {
-        font-size: 18px;
-    }
-
-    .account .items_account .text_description {
-        font-size: 11px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons {
-        width: 36px;
-        height: 36px;
-        border-radius: 18px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
-    }
-
-    .account .items_account .formulair_account label {
-        font-size: 13px;
-    }
-
-    .account .items_account .formulair_account input {
-        height: 40px;
-        font-size: 13px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 15px;
-        height: 35px;
-        margin-top: 10px;
-    }
-
-    #eyeicon {
-        height: 20px;
-    }
-    .account .items_account .formulair_account .button_description {
-        font-size: 12px;
-    }
-
-    .account .items_account .titre_account .icons {
-        margin-top: 12px;
-    }
-
-    .account .items_account .titre_account{
-        height: 27%;
-    }
-
-}
-
-@media (max-width: 350px) {
-    .oval {
-        width: 250px;
-        height: 250px;
-        top: -42px;
-        left: -105px;
-    }
-
-    .contenue_registration {
-        flex-direction: column;
-    }
-
-    .container_registration .groupe {
-        width: 150px;
-        height: 157px;
-        top: 16px;
-        left: 154px;
-        display: block;
-    }
-
-    .container_registration .image {
-        width: 90px;
         height: 30px;
-        top: 20px;
-        left: 20px;
-    }
-
-    .account .items_account {
-        width: 100%;
-        height: 425px;
-        top: 0px;
-    }
-
-    .account .items_account .text {
-        font-size: 18px;
-    }
-
-    .account .items_account .text_description {
-        font-size: 11px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons {
-        width: 36px;
-        height: 36px;
-        border-radius: 18px;
-    }
-
-    .account .items_account .titre_account .icons .items_icons img {
-        height: 19px;
     }
 
     .account .items_account .formulair_account label {
-        font-size: 13px;
+        font-size: 25px;
     }
 
     .account .items_account .formulair_account input {
-        height: 40px;
-        font-size: 13px;
-    }
-
-    .account .items_account .formulair_account .button_sign {
-        font-size: 15px;
-        height: 35px;
+        height: 55px;
+        border-radius: 45px;
+        font-size: 23px;
+        padding-left: 25px;
+        padding-right: 16px;
         margin-top: 10px;
+        margin-bottom: 15px;
     }
 
     #eyeicon {
-        height: 20px;
+        bottom: 26px;
+        right: 25px;
+        height: 30px;
     }
+
+    .account .items_account .formulair_account .button_sign {
+        font-size: 26px;
+        border-radius: 60px;
+        height: 60px;
+    }
+
     .account .items_account .formulair_account .button_description {
-        font-size: 12px;
+        font-size: 20px;
     }
 
-    .account .items_account .titre_account .icons {
-        margin-top: 12px;
+    .container_registration .image {
+        top: 40px;
+        left: 55px;
+        width: 175px;
+        height: 60px;
     }
 
-    .account .items_account .titre_account{
-        height: 27%;
+    .oval2 {
+        top: -208px;
+        right: -191px;
+        width: 700px;
+        height: 700px;
     }
 
-    .contenue_registration .account {
-        width: 100%;
+    .oval {
+        left: -380px;
+        width: 750px;
+        height: 750px;
     }
 
-}
-
-
-@media (max-width: 300px) {
-    .container_registration .groupe {
-        left: 130px;
+    .rectangle {
+        bottom: 0px;
+        right: 0;
+        width: 984px;
+        height: 153px;
     }
 
 }
