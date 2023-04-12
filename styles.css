@@ -1812,6 +1812,43 @@ input:checked + .slider:before {
     }
 }
 
+@media (max-width: 1500px) {
+    .container_registration .groupe {
+        width: 100%;
+        height: 75%;
+        bottom: 63px;
+        position: absolute;
+    }
+
+    .container_registration .picture_groupe {
+        width: 40%;
+        position: relative;
+    }
+
+    .contenue_registration .account {
+        width: 40%;
+    }
+
+    .rectangle {
+        width: 800px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .container_registration .groupe {
+        width: 100%;
+        height: 80%;
+    }
+
+    .contenue_registration .account {
+        width: 45%;
+    }
+
+    .rectangle {
+        width: 800px;
+    }
+}
 
 
 @media (max-width: 1024px) {
@@ -1824,8 +1861,8 @@ input:checked + .slider:before {
 
     .oval2 {
         position: absolute;
-        top: -208px;
-        right: 1046px;
+        top: -293px;
+        right: -224px;
         width: 551px;
         height: 551px;
         background: #8353E24D; /* secondary-500 */
@@ -1836,7 +1873,7 @@ input:checked + .slider:before {
         position: absolute;
         bottom: -50px;
         right: -90px;
-        width: 784px;
+        width: 615px;
         height: 153px;
         background: #8353E24D;
         border-radius: 8px;
@@ -1856,7 +1893,7 @@ input:checked + .slider:before {
         height: 518px;
         position: relative;
         top: 50px;
-        left: -50px;
+        left: 0px;
     }
 
     .contenue_registration {
@@ -1873,7 +1910,7 @@ input:checked + .slider:before {
         width: 400px;
         height: 500px;
         border-radius: 8px;
-        top: 25px;
+        top: 0px;
         position: relative;
     }
 
@@ -3459,39 +3496,25 @@ input:checked + .slider:before {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 980px) {
     .container_registration .groupe {
-        width: 48%;
-        height: 93%;
-    }
-
-    .contenue_registration .account {
-        width: 45%;
-    }
-
-    .rectangle {
-        width: 800px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .container_registration .groupe {
-        width: 100%;
-        height: 75%;
-        bottom: 63px;
-        position: absolute;
-    }
-
-    .container_registration .picture_groupe {
-        width: 40%;
+        width: 440px;
+        height: 500px;
         position: relative;
-    }
-
-    .contenue_registration .account {
-        width: 40%;
-    }
-
-    .rectangle {
-        width: 800px;
+        top: 68px;
+        left: 10px;
     }
 }
+
+@media (max-width: 950px) {
+    .container_registration .groupe {
+        width: 440px;
+        height: 500px;
+        position: relative;
+        top: 68px;
+        left: 10px;
+    }
+}
+
+
+
