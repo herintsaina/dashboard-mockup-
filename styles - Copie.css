@@ -1896,13 +1896,13 @@ input:checked + .slider:before {
         left: 0px;
     }
 
-    .contenue_registration {
-        display: flex;
-        margin: auto;
-        max-width: 100%;
-        justify-content: space-around;
-        position: relative;
-        z-index: 2;
+    /*.contenue_registration {*/
+    /*    display: flex;*/
+    /*    margin: auto;*/
+    /*    max-width: 100%;*/
+    /*    justify-content: space-around;*/
+    /*    position: relative;*/
+    /*    z-index: 2;*/
     }
 
     .account .items_account {
@@ -3537,5 +3537,20 @@ input:checked + .slider:before {
         left: -10px;
     }
 }
+
+
+@media (max-width: 320px){
+    .contenue_registration{
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+        max-width: 100%;
+        justify-content: space-around;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
 
 
