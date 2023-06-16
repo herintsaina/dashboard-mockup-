@@ -1673,7 +1673,7 @@ input:checked + .slider:before {
     /*left: 0px;*/
 }
 
-.contenue_registration .account {
+.account {
     width: 35%;
 }
 
@@ -1759,9 +1759,9 @@ input:checked + .slider:before {
     height: 153px;
 }
 
-/*}*/
 
-@media (max-width: 1771px) {
+
+/* @media (max-width: 1771px) {
     .account .items_account .titre_account {
         max-width: 65%;
     }
@@ -1828,14 +1828,14 @@ input:checked + .slider:before {
     /*    width: 90%;*/
     /*    height: 84%;*/
     /*    bottom: -95px;*/
-    /*}*/
+    /*}*
 
     .account .items_account .titre_account {
         max-width: 78%;
     }
 
     .contenue_registration .account {
-        width: 36%;
+        width: 45%;
     }
 
     .contenue_registration .picture_groupe {
@@ -1852,8 +1852,108 @@ input:checked + .slider:before {
         justify-content: space-around;
     }
 
+} */
+
+/**** RESPONSIVE REGISTRATION ******/
+
+
+@media (min-width:320px) {
+    .contenue_registration{
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .picture_groupe {
+        height: 25%;
+    }
+
+    .account{
+        width: 100%;
+        height: 75%;
+    }
+
+    .account .items_account{
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+    }
+
+    .container_registration .image {
+        width: 240px;
+        height: 90px;
+    }
+
+    .container_registration .groupe{
+        height: 112%;
+    }
+
+    .account .items_account .text {
+        font-size: 70px;
+    }
+    .account .items_account .titre_account{
+        max-width: 100%;
+    }
+
+    .account .items_account .text_description {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .account .items_account .titre_account .icons .items_icons img {
+        height: 71px;
+        padding: 30px;
+    }
+
+    .account .items_account .titre_account .icons .items_icons {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+    }
+
+    .account .items_account .titre_account .icons {
+        margin-top: 50px;
+        gap: 25px;
+    }
+
+    .account .items_account .formulair_account label {
+        font-size: 58px;
+    }
+
+    .account .items_account .formulair_account input {
+        height: 110px;
+        font-size: 42px;
+        padding-left: 35px;
+        border-radius: 65px;
+        padding-right: 0;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    #eyeicon {
+        bottom: 75px;
+        right: 75px;
+        height: 60px;
+    }
+
+    .account .items_account .formulair_account .button_sign {
+        font-size: 50px;
+        border-radius: 70px;
+        height: 110px;
+        width: 97%;
+    }
+
+    .account .items_account .formulair_account .button_description {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .oval2{
+        display: none;
+    }
+
 }
 
-
-
+@media (min-width:440px) {
+    
+}
 
